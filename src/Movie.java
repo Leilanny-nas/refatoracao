@@ -27,5 +27,9 @@ public class Movie<_title> {
             return 0;
         }
 
+    public int getFrequentRenterPoint(int daysRented) {
+
+        return daysRented;
+    }
 }
 
