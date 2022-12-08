@@ -50,8 +50,7 @@ public class Movie<_title> {
             return _title;
         }
         public double getCharge(int daysRented){
-
-            return 0;
+            return _price.getCharge(daysRented);
         }
 
     public int getFrequentRenterPoint(int daysRented) {
