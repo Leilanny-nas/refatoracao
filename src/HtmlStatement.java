@@ -19,3 +19,4 @@ public class HtmlStatement extends  Statement{
                 "</EM> frequent renter points<P>";
         return result;
 }
+    }
