@@ -18,28 +18,13 @@ public class Movie<_title> {
         public void setPriceCode(int arg) {
            switch (arg){
                case REGULAR:
-                   _price = new RegularPrice() {
-                       @Override
-                       public int getPrideCode() {
-                           return 0;
-                       }
-                   };
+                   _price = new RegularPrice();
                    break;
                case CHILDRENS:
-                   _price = new ChildrensPrice() {
-                       @Override
-                       public int getPrideCode() {
-                           return 0;
-                       }
-                   };
+                   _price = new ChildrensPrice();
                    break;
                case NEW_RELEASE:
-                   _price = new NewReleasePrice() {
-                       @Override
-                       public int getPrideCode() {
-                           return 0;
-                       }
-                   };
+                   _price = new NewReleasePrice();
                    break;
                default:
                    throw new IllegalArgumentException("Incorrect Price Code");
@@ -55,7 +40,7 @@ public class Movie<_title> {
 
     public int getFrequentRenterPoint(int daysRented) {
 
-        return daysRented;
+        return _price.getFrequentRenterPoints(daysRented);
     }
 }
 
