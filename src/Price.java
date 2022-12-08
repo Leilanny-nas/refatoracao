@@ -3,7 +3,7 @@ public abstract class Price{
 
     public int getFrequentRenterPoints(int daysRented){
 
-        return daysRented;
+        return 1;
     }
 
     public abstract int getPrideCode();
