@@ -14,4 +14,8 @@ public class Rental {
     public Movie getMovie() {
         return _movie;
     }
+    public double getCharge(){
+
+        return 0;
+    }
 }

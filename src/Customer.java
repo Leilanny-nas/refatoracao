@@ -17,13 +17,13 @@ public class Customer {
         return _name;
     }
 
-    public String statement() {
+    public String statement(Rental each) {
         double totalAmount = 0;
         int frequentRenterPoints = 0;
         Enumeration rentals = _rentals.elements();
         String result = "Rental Record for " + getName() + "\n";
         while (rentals.hasMoreElements()) {
-            double thisAmount = amountFor(each);
+            double thisAmount = each.getCharge();
             Rental each = (Rental) rentals.nextElement();
 
             //determine amounts for each line
